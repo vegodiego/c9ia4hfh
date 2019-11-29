@@ -1,8 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1><%= @room.new_record? ? "Publicar": "Editar" %> Habitación</h1>
 
+      <h1><%= @room.new_record? ? "Publicar": "Editar" %> Habitación</h1>
+      
       <% if @room.errors.any? %>
         <div class="alert alert-danger">
           <ul>
